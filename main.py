@@ -41,12 +41,6 @@ print(df.info())
 print("\nDeskripsi Statistik:")
 print(df.describe())
 
-# Visualisasi Histogram Target Asli
-plt.figure(figsize=(8,5))
-sns.histplot(df["poorpeople_percentage"], kde=True)
-plt.title("Distribusi Persentase Penduduk Miskin")
-plt.show()
-
 numerical_columns = [
     "poorpeople_percentage",
     "reg_gdp",
